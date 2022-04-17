@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:nature_ui/components/my_bottom_nav_bar.dart';
+import 'package:nature_ui/constants.dart';
 import 'package:nature_ui/screens/home/components/body.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,10 +9,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: buildAppBar(),
       body: Body(),
-      bottomNavigationBar: Container(),
+      bottomNavigationBar: MyBottomNavBar(size: size),
     );
   }
 
@@ -24,3 +27,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
