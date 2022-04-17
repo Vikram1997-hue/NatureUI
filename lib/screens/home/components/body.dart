@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:nature_ui/screens/home/components/header_with_searchbox.dart';
-import 'package:nature_ui/screens/home/components/title_with_more_btn.dart';
-import 'package:nature_ui/screens/home/components/entire_recommended_section.dart';
+import 'header_with_searchbox.dart';
+import 'title_with_more_btn.dart';
+import 'entire_recommended_section.dart';
+import 'all_featured_plants.dart';
 import 'package:nature_ui/constants.dart';
 
 
@@ -22,9 +23,11 @@ class Body extends StatelessWidget {
           TitleWithMoreBtn(size: size, myColor: myColor, title: "Recommended", press: () {}),
           EntireRecommendedSection(),
           TitleWithMoreBtn(size: size, myColor: myColor, title: "Featured Plants", press: () {}),
+          AllFeaturedPlants(),
+          SizedBox(height: kDefaultPadding),
+
         ],
       ),
     );
   }
 }
-
