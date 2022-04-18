@@ -22,7 +22,7 @@ class MyBottomNavBar extends StatelessWidget {
         color: Colors.white,
         boxShadow: [BoxShadow(
           offset: Offset(0,-10),
-          blurRadius: 35,
+          blurRadius: 30,
           color: kPrimaryColor.withOpacity(0.38),
         )],
       ),

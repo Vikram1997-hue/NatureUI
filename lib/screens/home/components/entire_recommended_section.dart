@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nature_ui/constants.dart';
+import 'package:nature_ui/screens/details/details_screen.dart';
 
 class EntireRecommendedSection extends StatelessWidget {
   const EntireRecommendedSection({
@@ -16,14 +17,22 @@ class EntireRecommendedSection extends StatelessWidget {
             image: "assets/images/image_1.png",
             title: "Samantha",
             country: "Ukraine",
-            press: () {},
+            press: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) => DetailsScreen(),
+              ));
+            },
             price: 440,
           ),
           RecommendedSectionTemplate(
             image: "assets/images/image_2.png",
             title: "Hydrangea",
             country: "USA",
-            press: () {},
+            press: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (context) => DetailsScreen(),
+              ));
+            },
             price: 540,
           ),
           RecommendedSectionTemplate(

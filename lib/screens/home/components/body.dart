@@ -10,7 +10,7 @@ import 'package:nature_ui/constants.dart';
 class Body extends StatelessWidget {
   //const Body({Key? key}) : super(key: key);
 
-  static const myColor = const Color(0xFF0c9869);
+  static const myColor = const Color(0xFF098d5d);
 
   @override
   Widget build(BuildContext context) {
